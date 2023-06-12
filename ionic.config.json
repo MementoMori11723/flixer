@@ -1,0 +1,7 @@
+{
+  "name": "flixer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}

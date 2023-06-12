@@ -1,0 +1,8 @@
+{
+  "appId": "com.flixer",
+  "appName": "flixer",
+  "webDir": "build",
+  "server": {
+    "androidScheme": "https"
+  }
+}
