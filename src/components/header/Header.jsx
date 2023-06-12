@@ -7,7 +7,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
-import logo from "/flixer-logo.png";
+import logo from "../../assets/flixer-logo-main.png";
 
 const Header = () => {
     const [show, setShow] = useState("top");

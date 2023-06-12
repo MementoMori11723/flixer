@@ -52,6 +52,7 @@ const SearchResult = () => {
         <div className="searchResultsPage">
             {loading && <Spinner initial={true} />}
             {!loading && (
+                <>
                 <ContentWrapper>
                     {data?.results?.length > 0 ? (
                         <>
@@ -82,11 +83,13 @@ const SearchResult = () => {
                             </InfiniteScroll>
                         </>
                     ) : (
-                        <span className="resultNotFound">
-                            Sorry, Results not found!
-                        </span>
+                        <>
+                        <img src={noResults} className="resultNotFound" title="No result Found!"/>
+                        <h3 className="resultNotFound">No result Found</h3>
+                        </>
                     )}
                 </ContentWrapper>
+                </>
             )}
         </div>
     );
