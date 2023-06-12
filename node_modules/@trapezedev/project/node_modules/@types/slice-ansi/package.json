@@ -1,0 +1,29 @@
+{
+    "name": "@types/slice-ansi",
+    "version": "5.0.0",
+    "description": "TypeScript definitions for slice-ansi",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Dan Imhoff",
+            "url": "https://github.com/dwieeb",
+            "githubUsername": "dwieeb"
+        },
+        {
+            "name": "Piotr Błażejewicz",
+            "url": "https://github.com/peterblazejewicz",
+            "githubUsername": "peterblazejewicz"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/slice-ansi"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "19a20d99c24c9fd7cacbc628f95115b855be09e7003bd55199a8fde3aa957e72",
+    "typeScriptVersion": "3.5"
+}

@@ -1,0 +1,40 @@
+{
+    "name": "@types/diff",
+    "version": "5.0.3",
+    "description": "TypeScript definitions for diff",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/diff",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "vvakame",
+            "url": "https://github.com/vvakame",
+            "githubUsername": "vvakame"
+        },
+        {
+            "name": "szdc",
+            "url": "https://github.com/szdc",
+            "githubUsername": "szdc"
+        },
+        {
+            "name": "BendingBender",
+            "url": "https://github.com/BendingBender",
+            "githubUsername": "BendingBender"
+        },
+        {
+            "name": "Piotr Błażejewicz",
+            "url": "https://github.com/peterblazejewicz",
+            "githubUsername": "peterblazejewicz"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/diff"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "a81360e757c0fc118165ce0161b98d4d2cf1a52dd63b2f80612d25278167de39",
+    "typeScriptVersion": "4.3"
+}
