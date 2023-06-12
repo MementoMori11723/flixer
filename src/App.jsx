@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, BrowserRouter } from "react-router-dom";
 import fetchData from "./utils/api";
 
 import { useSelector, useDispatch } from "react-redux";

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "../../../components/carousel/Carousel";
-import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import useFetch from "../../../hooks/useFetch";
 import cosineSimilarity from "cosine-similarity"; // Assuming you have installed the `cosine-similarity` npm package
 
 const Recommendation = ({ mediaType, id }) => {
-  const [sortedData, setSortedData] = useState([]);
   const { data, loading, error } = useFetch(`/${mediaType}/${id}/recommendations`);
-  if (data?.results.length > 0){
+    const [sortedData, setSortedData] = useState([]);
+    
     function convertVector(param) {
       const vocabulary = Array.from(new Set(param));
       const vector = new Array(vocabulary.length).fill(0);
@@ -34,14 +33,14 @@ const Recommendation = ({ mediaType, id }) => {
   console.log(sortedData)
 
   return (
-    <Carousel
+      sortedData.length > 0 ? 
+      <Carousel
       title="Recommendations"
       data={sortedData}
       loading={loading}
       endpoint={mediaType}
-    />
+    /> : <></>
   );
-  }
 };
 
 export default Recommendation;

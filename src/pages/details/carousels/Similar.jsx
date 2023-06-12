@@ -4,11 +4,9 @@ import useFetch from "../../../hooks/useFetch";
 import cosineSimilarity from "cosine-similarity";
 
 const Similar = ({ mediaType, id }) => {
-    const [Datasorted, setDataSorted] = useState([]);
     const { data, loading, error } = useFetch(`/${mediaType}/${id}/similar`);
-
     const title = mediaType === "tv" ? "Similar TV Shows" : "Similar Movies";
-    if(data?.results.length > 0){
+        const [Datasorted, setDataSorted] = useState([]);
         function convertVector(param) {
             const vocabulary = Array.from(new Set(param));
             const vector = new Array(vocabulary.length).fill(0);
@@ -34,14 +32,14 @@ const Similar = ({ mediaType, id }) => {
         }, [data]);
     
         return (
+            Datasorted.length > 0 ? 
             <Carousel
-                title={title}
-                data={Datasorted}
-                loading={loading}
-                endpoint={mediaType}
-            />
+            title={title}
+            data={Datasorted}
+            loading={loading}
+            endpoint={mediaType}
+        /> : <></> 
         );
-    }
 };
 
 export default Similar;
