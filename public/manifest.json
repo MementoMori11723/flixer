@@ -1,6 +1,6 @@
 {
-    "short_name": "React App",
-    "name": "Create React App Sample",
+    "short_name": "Flixer",
+    "name": "Flixer",
     "icons": [
         {
           "src": "icons/manifest-icon-192.maskable.png",
