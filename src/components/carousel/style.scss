@@ -5,10 +5,9 @@
         position: relative;
     }
     .carouselTitle {
-        font-size: 24px;
-        color: white;
+        color: var(--gradient);
         margin-bottom: 20px;
-        font-weight: normal;
+        font-weight: 700;
     }
     .arrow {
         font-size: 30px;
