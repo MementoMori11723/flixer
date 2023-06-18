@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
 import { VscChromeClose } from "react-icons/vsc";
@@ -17,6 +17,20 @@ const Header = () => {
     const [showSearch, setShowSearch] = useState("");
     const navigate = useNavigate();
     const location = useLocation();
+    let bar = useRef();
+
+    useEffect(() => {
+        let handler = (e) => {
+            if(!bar.current.contains(e.target)){
+                setShowSearch(false);
+                console.log(bar.current)
+            }
+        }
+        document.addEventListener("mousedown",handler);
+        return () => {
+            document.removeEventListener("mousedown",handler);
+        }
+    })
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -104,7 +118,7 @@ const Header = () => {
                 </div>
             </ContentWrapper>
             {showSearch && (
-                <div className="searchBar">
+                <div className={`searchBar`} ref={bar}>
                     <ContentWrapper>
                         <div className="searchInput">
                             <input
